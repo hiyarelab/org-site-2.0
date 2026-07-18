@@ -19,7 +19,7 @@ export function Button({ href, children, variant = "primary", className }: Butto
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [ripples, setRipples] = useState<Ripple[]>([]);
 
-  function handleMouseMove(e: React.MouseEvent<HTMLAnchorElement>) {
+  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     const r = ref.current?.getBoundingClientRect();
     if (!r) return;
     const x = e.clientX - r.left - r.width / 2;
