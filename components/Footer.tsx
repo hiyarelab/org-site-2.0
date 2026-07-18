@@ -1,12 +1,14 @@
+"use client";
+
 import Link from "next/link";
-import { Instagram, Facebook, Linkedin, ArrowRight } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, Camera, Globe } from "lucide-react";
 
 const quickLinks = ["Home", "Portfolio", "Process", "Pricing", "FAQ"];
 const serviceLinks = ["Website Design", "E-Commerce", "SEO Optimization", "Maintenance"];
 const socials = [
-  { icon: Instagram, label: "Instagram" },
-  { icon: Facebook, label: "Facebook" },
-  { icon: Linkedin, label: "LinkedIn" },
+  { icon: Camera, label: "Instagram" },
+  { icon: Globe, label: "Facebook" },
+  { icon: BriefcaseBusiness, label: "LinkedIn" },
 ];
 
 export function Footer() {
